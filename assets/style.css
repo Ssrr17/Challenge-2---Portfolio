@@ -4,6 +4,7 @@
     box-sizing: border-box;
   }
 body {
+   background-image: url("../assets/images/_21_dark-website-background_dark-black-website-background-E-Marketeers.jpg");
   
     font: medium lightsalmon ;
 }
@@ -11,10 +12,7 @@ header {
     color: lightsalmon ;
     flex-wrap: wrap;
     text-align: left;
-    background-image: url('../assets/images/172148_10150090546835382_501815381_6459012_3145462_o.jpg');
-    background-attachment: fixed;
-  background-position: left;
-    background-size: inherit;
+    
 
 }
 header h1 {
@@ -23,10 +21,12 @@ header h1 {
     text-align: center;
 }
 
-header ul li {
+header ul li a {
+color: lightsalmon;
 list-style: none;
 padding: 5px 5px 5px 5px;
-font-size: 20px;
+font-size: 40px;
+font-family: Brush Script MT;
 
 }
 header nav ul {
@@ -48,18 +48,29 @@ header nav ul {
 
   }
   .works {
-    border-bottom: lightsalmon solid;
-    border-top: lightsalmon solid;
-    border-radius: 15px;
-    padding: 20px;
+    padding: 20px ;
+    color: lightsalmon ;
+    font-weight: bolder;
+    font-family: monospace;
+    display: inline-block;
+    border: 5px inset;
+
     
   
   }
+  img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+  
   .project {
-    background-image: url("../assets/images/172148_10150090546835382_501815381_6459012_3145462_o.jpg");
-    background-size: inherit;
-    background-position: left;
-    background-attachment: fixed;
+    
 
   display: flex;
   justify-content: center;
@@ -68,19 +79,19 @@ header nav ul {
   border-bottom: darkblue;
 
   }
-  .project h2 {
-      font-size: 32px;
+  h2 {
+    color: beige;
+    letter-spacing: .2cm;
+    font-size: 36px;
     width: 100%;
     margin: 100px;
     border-bottom: lightsalmon solid;
-  font-size: 32px;
-  font-style: italic;
-  font-family: cursive;
+   font-family: Brush Script MT;
     flex-wrap: wrap;
     
    
     
-    background-size: cover;
+   
    
   }
   
@@ -101,8 +112,7 @@ header nav ul {
         font-family: monospace;
         display: inline-block;
         border: 5px inset;
-        background-image: url('../assets/images/vitaly-bulgarov-gladiatorrobot-09.jpeg');
-        background-size: contain;
+        
   }
   .work-hold {
     padding: 20px ;
@@ -112,24 +122,80 @@ header nav ul {
         display: inline-block;
         border: 5px inset;
 
+
   }
+  .hero-img { 
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+}
+  
+  .photo {
+    background-image: url('../assets/images/vitaly-bulgarov-gladiatorrobot-09.jpeg');
+    background-size: 300px;
+    
+    background-position: center;
+    border-radius: 10%;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+
+    display: block;
+    width: 90%;
+    height: 190px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+    
+  }
+  .photo1 {
+    background-image: url('../assets/images/Screenshot.jpg');
+    background-size: 300px;
+    
+    background-position: center;
+    border-radius: 10%;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+
+    display: block;
+    width: 90%;
+    height: 190px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space:nowrap;
+    
+}
+
+.photo:hover {
+    background-size: 500px;
+}
+.photo1:hover {
+   background-size: 500px;
+}
+  
 .aboutme {
-  background-image: url("../assets/images/172148_10150090546835382_501815381_6459012_3145462_o.jpg");
-  background-size: inherit;
-  background-position: left;
-  background-attachment: fixed;
+ color: lightsalmon; 
 padding: 80px 40px;
+font-family: brush Script MT;
+font-size: 30px;
 align-items: center;
+display: block;
+margin: 50px;
 }
 .aboutme h2 {
   border-bottom: lightsalmon solid;
   font-size: 32px;
-  font-style: italic;
-  font-family: cursive;
+  }
+.aboutme img {
+    
 }
 footer {
-  background-image: url('../assets/images/172148_10150090546835382_501815381_6459012_3145462_o.jpg');
-    background-attachment: fixed;
-  background-position: left;
-    background-size: inherit;
+  
 }
