@@ -3,52 +3,73 @@
     padding: 0;
     box-sizing: border-box;
   }
+  /** syles entire page **/
 body {
    background-image: url("../assets/images/_21_dark-website-background_dark-black-website-background-E-Marketeers.jpg");
     
     font: medium lightsalmon ;
 }
+ /** styles the header elements**/
 header {
     color: lightsalmon ;
     flex-wrap: wrap;
     text-align: left;
-    
-
 }
 header h1 {
-    font-size: 15px;
+    font: 30px;
+    font-family: Brush Script MT ;
     padding: 20px;
     text-align: center;
 }
 
 header ul li a {
-color: lightsalmon;
-list-style: none;
-padding: 5px 5px 5px 5px;
-font-size: 40px;
-font-family: Brush Script MT;
-
+    color: lightsalmon;
+    list-style:square;
+    padding: 10px 10px 10px 10px;
+    font-size: 50px;
+    font-family: Brush Script MT;
+    text-decoration:none;
+  
 }
 header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
     align-items: center;
-    list-style: none;
-  
-  }
-  
-  .work {
-      margin: 50px 50px;
-      justify-content: center;
-      width: 100;
+    }
+/** syles my profile section **/
+.aboutme {
+   display: flex;
+    color: lightsalmon; 
+    padding: 40px 20px;
+    font-family: brush Script MT;
+    font-size: 30px;
+    align-items: center;
+    display: block;
+    margin: 50px;
+    }
+h2 {
+    color: beige;
+    letter-spacing: .2cm;
+    font-size: 75px;
+    width: 100%;
+    margin: 100px;
     border-bottom: lightsalmon solid;
-   
+    font-family: Brush Script MT;
+    flex-wrap: wrap;
+    border-radius: 10%;
+    }    
 
-      box-sizing: border-box;
+  /** syles my projects section **/
+.work {
+    margin: 50px 50px;
+    justify-content: center;
+    width: 100;
+    border-bottom: lightsalmon solid;
+    box-sizing: border-box;
 
   }
-  .works {
+.works {
     padding: 20px ;
     color: lightsalmon ;
     font-weight: bolder;
@@ -56,99 +77,78 @@ header nav ul {
     font-size: 20px;
     display: inline-block;
     border: 5px inset;
-
-    
-  
-  }
-  img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-  }
-  
-  img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  }
-  
-  .project {
-    
-
+    align-items: center;
+ }
+.project {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
-  border-bottom: darkblue;
-
+  
+}
+.work1 {
+  font-family: monospace;
+  font-size: 20px;
+  color: lightsalmon ;
+  border: 5px inset ;
+  padding: 20px ;
   }
-  h2 {
-    color: beige;
-    letter-spacing: .2cm;
-    font-size: 36px;
-    width: 100%;
-    margin: 100px;
-    border-bottom: lightsalmon solid;
-   font-family: Brush Script MT;
-    flex-wrap: wrap;
-     border-radius: 10%;
-    
-   
-    
-   
-   
+.runbud {
+  background-image: url("../assets/images/hero-bg .jpg");
+  background-size: cover  ;
+  background-clip: border-box;
+  transition: background-size 0.2s;
+  transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+  border: beige 5px inset;
+  display: block;
+  width: 100%;
+  height: 190px;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space:nowrap;
   }
   
-
-  .work1 {
-    font-family: monospace;
-    font-size: 20px;
+  .work2 {
+    justify-content: center;
+    padding: 20px 20px;
     color: lightsalmon ;
-      border: 5px inset ;
-      padding: 20px ;
+    font-weight: bolder;
+    font-family: monospace;
+    display: inline-block;
+    border: 5px inset;
+            
   }
-  .runbud {
-      background-image: url("../assets/images/hero-bg .jpg");
-      background-size: cover  ;
-      background-clip: border-box;
-      transition: background-size 0.2s;
-      transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
-      border: beige 5px inset;
-      display: block;
-      width: 100%;
-      height: 190px;
-      text-decoration: none;
-      cursor: pointer;
-      overflow: hidden;
-      text-indent: 100%;
-      white-space:nowrap;
-      
-    }
-  
-      .work2 {
-        padding: 20px ;
-        color: lightsalmon ;
-        font-weight: bolder;
-        font-family: monospace;
-        display: inline-block;
-        border: 5px inset;
-        
+  .work4 {
+    
+    padding: 20px 20px;
+    color: lightsalmon ;
+    font-weight: bolder;
+    font-family: monospace;
+    display: inline-block;
+    border: 5px inset;
+    
   }
-  .work-hold {
+ .myinfo { 
     padding: 20px ;
-        color: lightsalmon ;
-        font-weight: bolder;
-        font-family: monospace;
-        display: inline-block;
-        border: 5px inset;
-
-
-  }
-  .hero-img { 
     width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-evenly ;
+    border: 5px inset ivory;
+    border-radius: 2%;
+ 
+}
+.myinfo p a {
+  color
+  :rgb(0, 255, 213);
+}
+.myinfo img { 
+  padding: 5px;
+  border: lightsalmon solid 5px;
+  border-radius: 10%;
 }
   
   .photo {
@@ -201,24 +201,10 @@ header nav ul {
 .runbud:hover {
   background-size: 500px;
 }
-  
-.aboutme {
- color: lightsalmon; 
-padding: 80px 40px;
-font-family: brush Script MT;
-font-size: 30px;
-align-items: center;
-display: block;
-margin: 50px;
-}
-.aboutme h2 {
-  border-bottom: lightsalmon solid;
-  font-size: 32px;
-  }
-.aboutme img {
-    
-}
-footer nav ul   {
+ 
+/** styles for footer and contact section **/
+
+.contact ul   {
 display: flex;
 text-align: left;
 align-items: center;
@@ -227,7 +213,57 @@ color: lightsalmon;
 font-size: 32px ;
 font-family: Brush Script MT ;
 }
-footer nav ul li a {
+.contact ul li a {
   color: lightsalmon;
+  padding:  30px;
+
+}
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 840px) {
+  .myinfo  p {
+    display: inline-block;
+    position: relative;
+
+  }
+  h1 {
+    width: 80%;
+  }
+  footer {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact ul li a {
+    width: 95%;
+    display: block;
+  }
+
+
+}
+@media screen and (max-width: 375px) {
+  header nav ul li a {
+    font-size: 80px ;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+  }
+.contact {
+  display: block;
+  
+}
+h2 {
+  width: 95%;
+  font-size: 46;
+  align-items: center;
+  
+}
+.aboutme {
+  width: 95%;
+}
+.work1 {
+  width: 95%;
+  justify-content: center;
+}
 
 }
